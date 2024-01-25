@@ -13,12 +13,15 @@ import useAuth from "./hooks/useAuth";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+
   },
+  // colorPrimary:{background:'#10c45b'},
   rightToolbar: {
     flexGrow: 1,
   },
   title: {
     marginRight: theme.spacing(2),
+    
   },
 }));
 
@@ -35,9 +38,9 @@ function App() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar >
           <Typography variant="h6" className={classes.title}>
-            Real App
+            Auth App
           </Typography>
           <div className={classes.rightToolbar}>
             <Button color="inherit" component={Link} to="/">
